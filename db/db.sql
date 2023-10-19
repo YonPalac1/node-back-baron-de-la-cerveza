@@ -27,9 +27,9 @@ CREATE TABLE products (
 );
 
 
-INSERT INTO categories VALUES
+INSERT INTO categories (name) VALUES
 ('categori 1'), ('categori 2'),('categori 3'),('categori 4'),('categori 5'),('categori 6'),('categori 7'),('categori 8');
-INSERT INTO brands VALUES
+INSERT INTO brands (name) VALUES
 ('marca 1'), ('marca 2'),('marca 3'),('marca 4'),('marca 5'),('marca 6'),('marca 7'),('marca 8');
 
 INSERT INTO products (name, price, discount, description, alcohol_content, images, category_id, brand_id) VALUES
