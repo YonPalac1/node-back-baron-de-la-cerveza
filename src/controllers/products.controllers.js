@@ -28,3 +28,13 @@ export const getCategories = async (req, res) => {
     });
   }
 };
+export const getBrands = async (req, res) => {
+  try {
+    const [rows] = await pool.query("SELECT * FROM brands");
+    res.json(rows);
+  } catch (error) {
+    res.status(404).json({
+      message: "something was wrong",
+    });
+  }
+};
